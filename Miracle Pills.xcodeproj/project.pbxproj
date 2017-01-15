@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		074C46181E2C0B4D00373E0F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074C46171E2C0B4D00373E0F /* SecondViewController.swift */; };
 		07796DCC1E2B690200F47D2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07796DCB1E2B690200F47D2B /* AppDelegate.swift */; };
 		07796DCE1E2B690200F47D2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07796DCD1E2B690200F47D2B /* ViewController.swift */; };
 		07796DD11E2B690200F47D2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07796DCF1E2B690200F47D2B /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		074C46171E2C0B4D00373E0F /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		07796DC81E2B690200F47D2B /* Miracle Pills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Miracle Pills.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07796DCB1E2B690200F47D2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07796DCD1E2B690200F47D2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				07796DD21E2B690200F47D2B /* Assets.xcassets */,
 				07796DD41E2B690200F47D2B /* LaunchScreen.storyboard */,
 				07796DD71E2B690200F47D2B /* Info.plist */,
+				074C46171E2C0B4D00373E0F /* SecondViewController.swift */,
 			);
 			path = "Miracle Pills";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				074C46181E2C0B4D00373E0F /* SecondViewController.swift in Sources */,
 				07796DCE1E2B690200F47D2B /* ViewController.swift in Sources */,
 				07796DCC1E2B690200F47D2B /* AppDelegate.swift in Sources */,
 			);
@@ -505,6 +509,7 @@
 				07796DF21E2B690200F47D2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07796DF31E2B690200F47D2B /* Build configuration list for PBXNativeTarget "Miracle PillsTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				07796DF51E2B690200F47D2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07796DF61E2B690200F47D2B /* Build configuration list for PBXNativeTarget "Miracle PillsUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				07796DF81E2B690200F47D2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

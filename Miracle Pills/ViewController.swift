@@ -12,6 +12,14 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
 
     @IBOutlet weak var paisPicker: UIPickerView!
     @IBOutlet weak var paisPickerBoton: UIButton!
+    
+    //Ejercicio 43 - Elementos a esconder y mostrar
+    @IBOutlet weak var inputTelefono: UITextField!
+    @IBOutlet weak var labelTelefono: UILabel!
+    @IBOutlet weak var labelMail: UILabel!
+    @IBOutlet weak var inputMail: UITextField!
+    @IBOutlet weak var botonCompra: UIButton!
+    
     let paises = ["España","Portugal","Francia","Italia"]
     
     override func viewDidLoad() {
@@ -30,7 +38,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
 
     @IBAction func presionarBotonPaisPicker(_ sender: Any) {
+        //Lo que pasa al hacer click en seleccionar País
         paisPicker.isHidden = false
+        inputTelefono.isHidden = true
+        labelTelefono.isHidden = true
+        inputMail.isHidden = true
+        labelMail.isHidden = true
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -48,7 +61,16 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         paisPickerBoton.setTitle(paises[row], for: UIControlState.normal)
         paisPicker.isHidden = true
+        inputTelefono.isHidden = false
+        labelTelefono.isHidden = false
+        inputMail.isHidden = false
+        labelMail.isHidden = false
     }
 
+    @IBAction func realizarCompra(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "vista2") as! ViewController2
+        self.present(vc, animated: true, completion: nil)
+    }
+    
 }
 
